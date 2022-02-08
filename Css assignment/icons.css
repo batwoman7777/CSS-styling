@@ -1,0 +1,292 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.otherparent{
+    display:flex;
+    margin: 45px auto;
+    width: 1200px;
+    height: 600px;
+    justify-content: space-between;/*main-axis*/
+    align-items: center; /*cross-axis*/
+    /*now the main-axis is default - means x-axis
+    align-items will align relative to y-axis
+    justify-content will align relative to x-axis*/
+}
+.otherparent > *{
+    flex: 1;
+}
+.parent{
+    display:flex;
+    margin: 45px auto;
+}
+.parent > *{
+    flex: auto;
+}
+.child-1, .child-2, .child-3{
+    font-size: 100%;
+    background-image: linear-gradient(rgb(201, 194, 194), rgb(255, 255, 255));
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    border: rgb(226, 219, 219) solid 0.03125rem;
+    margin: 7px;
+}
+.child-1{
+    order: 3;
+}
+.child-2{
+    order: 1;
+}
+.child-3{
+    order: 2;
+}
+h1{
+    text-align: center;
+    color:rgb(226, 219, 219);
+    margin-top:0;
+    font-family: 'Cormorant Garamond', serif;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-shadow: -1px 2px 4px black;
+}
+
+.page-starter{
+    position: relative;
+    border: 1px solid burlywood;
+    padding: 25px;
+    border-radius: 0%;
+}
+
+.page-starter::before{
+    position: absolute;
+    content: '';
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(Trees-for-Fall.png);
+    background-size: cover;
+    opacity: 0.7;
+}
+
+.page-starter_h1{
+    position: relative;
+    color:rgb(20, 13, 13);
+    padding: 10px;
+    text-shadow: -1px 2px 4px #fff;
+    font-weight: 800;
+    text-transform: capitalize;
+    text-decoration: underline whitesmoke 3px;
+}
+
+.child-1_h1{
+    background-image: linear-gradient(to right, green, lime);
+}
+.child-2_h1{
+    background-image: linear-gradient(to right, rgb(212, 3, 3), orange);
+}
+.child-3_h1{
+    background-image: linear-gradient(to right, rgb(0, 0, 161), rgb(38, 152, 190));
+}
+ul{
+    font-family: 'Proza Libre', sans-serif;
+    list-style-type: none;
+    letter-spacing: .1em;
+    word-spacing: .2em;
+}
+i.fa-check{
+    color: seagreen;
+    text-shadow: -1px 0px 4px #8AB1CE;
+}
+i.fa-times{
+    color: red;
+    text-shadow: -1px 0px 4px #cebe8a;
+}
+i.fa-suitcase, i.fa-heart, i.fa-bullhorn{
+    color:rgb(226, 219, 219);
+    padding-right: 8px;
+    text-shadow: -1px 2px 4px black;
+    font-size: 80%;
+}
+li{
+    margin-left: 5px;
+    padding: 10px;
+    margin-right: 18px;
+    text-shadow: 0px 2px 5px #6d656b;
+    font-weight: bold;
+}
+a{
+    margin-left: 100px;
+    padding: 10px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    background-image: linear-gradient(to right, gold, rgba(255, 255, 17, 0.8) );
+    border: 1px solid rgb(228, 192, 165);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 2px 0px 4px rgb(34, 32, 32);
+    letter-spacing: 0.0325rem;
+    word-spacing: 2px;
+    color: rgb(3, 2, 2);
+    border-radius: 10px;
+}
+a:hover{
+    opacity: 0.8;
+    transition: 300ms ease-in-out;
+}
+.price{
+    padding-bottom: 50px;
+    padding-left: 45px;
+}
+.span-1{
+    color:grey;
+    font-size: 80%;
+    text-decoration:line-through red;
+}
+.span-2{
+    font-size: 80px;
+    background: linear-gradient(to right, rgb(207, 8, 131), rgb(0, 38, 255));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;  
+}
+
+table{
+    margin: 0 100px;
+    border: 1px solid #e0dbdf;
+    width: 80%;
+    height: 25%;
+    border-collapse: collapse;
+    text-align: left;
+    table-layout: auto;
+}
+
+th{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 120%;
+    background-color: teal;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    text-shadow: -1px 0px 4px rgb(129, 101, 230);
+}
+tr{
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 105%;
+}
+td{
+    padding: 10px;
+    margin: 8px;
+    color: rgb(20, 13, 13);
+    text-shadow: 0px 1px 5px rgb(134, 134, 218);
+    border: none;
+
+}
+tr:nth-child(even){
+    background-color: rgb(216, 216, 216);
+}
+tr:nth-child(odd){
+    background-color: honeydew;
+}
+tr.tfooter{
+    background-color: wheat;
+    color: brown;
+    text-align: left;
+    padding-top: 5px;
+    border: 1px solid #e0dbdf;
+}
+small{
+    text-shadow: -1px 0px 2px chocolate;
+}
+
+.form{
+    background: url(Trees-for-Fall.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+}
+
+form{
+    background: rgba(255,255,255,0.6);
+    width: 620px;
+    height: 500px;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+label{
+    font-family: 'Cormorant Garamond', serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+    margin-right: 10px;
+    font-weight: 800;
+}
+input{
+    width: 300px;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 60px;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Proza Libre', sans-serif;
+    border-radius: 10px;
+}
+#date{
+    margin-left: 20px;
+}
+
+#comments{
+    margin-left: 30px;
+}
+
+.page-starter-2{
+    position: relative;
+    padding: 25px;
+    border-radius: 0%;
+    background: rgba(224, 219, 223, 0.3);
+    width: 100%;
+}
+
+.radio{
+    width: 60px;
+    height: 15px;
+    margin-left: 0px;
+}
+
+button{
+    padding: 10px;
+    font-family:  'Proza Libre', sans-serif;
+    background-color: bisque;
+    border: rgb(207, 145, 64) 1px solid;
+    border-radius: 10px;
+    color:rgb(10, 1, 1);
+}
+
+button:hover{
+    background-color: rgb(243, 199, 145);
+    transition: 400ms ease-in-out;
+}
+.submit{
+    margin-left: 200px;
+}
+.reset{
+    margin-left: 10px;
+}
+
+footer{
+    background-color: blanchedalmond;
+    color: darkred;
+    padding: 40px;
+    margin: 30px auto;
+    text-align: center;
+    position: static;
+    text-transform: capitalize;
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+}
+

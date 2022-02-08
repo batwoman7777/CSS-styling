@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quintessential', cursive;
+    text-transform: capitalize;
+}
+body{
+    background: radial-gradient(circle, rgb(241, 202, 219) 25%, rgb(194, 221, 252) 79%);
+}
+.parent{
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.parent > *{
+    width: 232px;
+    height: 232px;
+    background: linear-gradient(90deg, rgb(156, 17, 248) 25%, rgb(28, 117, 218) 79%);
+    margin: 10px;
+    padding: 5px;
+}
+
+.module-wrapper{
+    width: 222px;
+    height: 222px;
+    background: radial-gradient(circle, rgb(241, 202, 219) 25%, rgb(194, 221, 252) 79%);
+    padding: 60px 20px 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px #f0df82;
+    color: rgba(0,0,0,0.8);
+}
+
+header{
+    width: 700px;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+    margin: 0 auto;
+    color: rgba(0,0,0,0.7);
+}
+
+header span{
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgb(219, 125, 199);
+}
+
+.child-i{
+    display:block;
+    padding-top: 10px;
+}
+.child-i i{
+    font-size: 35px;
+    padding: 3px;
+    text-shadow: 3px 7px 10px #f3eab5;
+}
+
+.fa-hashtag{
+    color: rgb(62, 0, 119);
+}
+.fa-robot{
+    color: rgb(211, 113, 22);
+}
+.fa-mug-hot{
+    color:saddlebrown;
+}
+
+.fa-hand-holding-heart{
+    color:rgb(245, 83, 183);
+}
+.fa-hands-helping{
+    color:rgb(240, 112, 212);
+}
+.fa-heart{
+    color: rgb(189, 8, 8);
+}
+.fa-lungs{
+    color:rgb(236, 95, 206);
+}
+.fa-pagelines{
+    color: green;
+}
+.fa-walking{
+    color:lavenderblush;
+}
+.fa-book.one{
+    color:maroon;
+}
+.fa-book.two{
+    color:mediumslateblue;
+}
+.fa-book-open{
+    color:midnightblue;
+}
+.fa-utensils{
+    color:rgb(199, 137, 22);
+}
+.fa-concierge-bell{
+    color:rgb(141, 83, 24);
+}
+.fa-photo-video{
+    color:rgb(111, 18, 204);
+}
+.fa-icons{
+    color:mediumvioletred;
+}
+.fa-video{
+    color:navy;
+}
